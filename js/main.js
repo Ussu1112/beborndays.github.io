@@ -22,12 +22,51 @@ jQuery(document).ready(function($) {
     }, 1500, 'easeInOutExpo');
     return false;
   });
-  $('.right-to-go').click(function() {
+
+  $('.right-to-go_1').click(function() {
     $('html, body').animate({
-      scrollTop: 1200
+      scrollTop: 547
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
+  $('.right-to-go_2').click(function() {
+    $('html, body').animate({
+      scrollTop: 3070
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+  $('.right-to-go_3').click(function() {
+    $('html, body').animate({
+      scrollTop: 3910
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+  $('.right-to-go_4').click(function() {
+    $('html, body').animate({
+      scrollTop: 4980
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // $(".right-to-go li").click(function() {
+  //   var scrollPosition = $($(this).attr("data-target")).offset().top;
+  
+  //   $('html.body').animate({
+  //         scrollTop: scrollPosition
+  //   }, 1500, 'easeInOutExpo');
+  // });
+
+  $('window').scroll(
+    function(){
+      if($(window).scrollTop() > 1000){
+        $('.current').addClass("right-to-go-current");
+      }else{
+        $('.current').removeClass("right-to-go-current");
+      }
+    }
+  )
+  
  
   // Initiate the wowjs animation library
   new WOW().init();
