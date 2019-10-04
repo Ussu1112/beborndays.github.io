@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   border : 2px solid white;
   font-size: 18px;
   border-radius: 8px;
-  margin : 0, 0, 20px, 0;
+  margin-bottom : 20px;
 }
 .right-to-go li a{
   color : white;
